@@ -5,6 +5,7 @@ function setup() {
 function draw() {
   background("brown");
   smilyFaceAmaris()
+  smilyFaceLari();
 }
 function smilyFaceAmaris(){
   //body
@@ -28,10 +29,7 @@ function smilyFaceAmaris(){
     fill("black");
     arc(300, 310, 20, 5, 0, Math.PI);
 }
-    background("gray");
-    smilyFaceLari();
-}
-
+   
 function smilyFaceLari(){
         //body
         fill("white");
