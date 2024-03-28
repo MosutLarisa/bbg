@@ -1,9 +1,17 @@
+let tableWidth = 700;
+let tableHight = 500;
+
 let smAmarisX =300;
 let smAmarisY =300;
 
-let directionX=1;
+let directionX= 1;
+let directionXAmaris=1;
+
+let smLariX = 400;
+let smLariY = 300;
+
 function setup() {
-    createCanvas(700, 500);
+    createCanvas(tableWidth, tableHight);
 }
 
 
@@ -12,10 +20,12 @@ function draw() {
     background("gray");
 
     checkLimitsSMAmaris();
-
+    checkLimitsSMLari();
+    
     smileyfaceAndreea(500, 300);
     smilyFaceAmaris(smAmarisX , smAmarisY);
-    smilyFaceLari(400, 300);
+    smilyFaceLari(smLariX , smLariY);
+
 }
 
 
@@ -52,8 +62,8 @@ function draw() {
 
 function checkLimitsSMAmaris(){
     if (smAmarisX >= 700)
-        directionX *= -1;
-    smAmarisX += directionX;     
+        directionXAmaris *= -1;
+    smAmarisX += directionXAmaris;     
 }
 
 function smilyFaceAmaris(x,y){
@@ -77,6 +87,13 @@ function smilyFaceAmaris(x,y){
     stroke("red");
     fill("black");
     arc(x, y+10, 20, 5, 0, Math.PI);
+}
+
+function checkLimitsSMLari() {
+    if(smLariX >= tableWidth) 
+        directionX *= -1;
+
+    smLariX += directionX;
 }
    
 function smilyFaceLari(x,y){
