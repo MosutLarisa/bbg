@@ -1,3 +1,7 @@
+let smAmarisX =300;
+let smAmarisY =300;
+
+let directionX=1;
 function setup() {
     createCanvas(700, 500);
 }
@@ -6,8 +10,11 @@ function setup() {
 
 function draw() {
     background("gray");
+
+    checkLimitsSMAmaris();
+
     smileyfaceAndreea(500, 300);
-    smilyFaceAmaris(300, 300)
+    smilyFaceAmaris(smAmarisX , smAmarisY);
     smilyFaceLari(400, 300);
 }
 
@@ -43,7 +50,11 @@ function draw() {
 
 
 
-
+function checkLimitsSMAmaris(){
+    if (smAmarisX >= 700)
+        directionX *= -1;
+    smAmarisX += directionX;     
+}
 
 function smilyFaceAmaris(x,y){
   //body
@@ -65,7 +76,7 @@ function smilyFaceAmaris(x,y){
 //mounth
     stroke("red");
     fill("black");
-    arc(300, y+10, 20, 5, 0, Math.PI);
+    arc(x, y+10, 20, 5, 0, Math.PI);
 }
    
 function smilyFaceLari(x,y){
