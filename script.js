@@ -7,8 +7,8 @@ function setup() {
 function draw() {
     background("gray");
     smileyfaceAndreea(500, 300);
-    smilyFaceAmaris()
-    smilyFaceLari();
+    smilyFaceAmaris(300, 300)
+    smilyFaceLari(400, 300);
 }
 
 
