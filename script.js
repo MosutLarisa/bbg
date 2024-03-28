@@ -1,3 +1,14 @@
+
+
+
+let smAndreeaX = 500;
+let smAndreeaY = 300;
+
+let directionXAndreea = 1;
+
+
+
+
 function setup() {
     createCanvas(700, 500);
 }
@@ -6,12 +17,21 @@ function setup() {
 
 function draw() {
     background("gray");
-    smileyfaceAndreea(500, 300);
+
+    checkLimtisSMAndreea();
+
+    smileyfaceAndreea(smAndreeaX, smAndreeaY);
+
     smilyFaceAmaris(300, 300)
     smilyFaceLari(400, 300);
 }
 
+function checkLimtisSMAndreea() {
+    if(smAndreeaX >= 700)
+     directionXAndreea *= -1;
 
+     smAndreeaX += directionXAndreea;
+}
    function smileyfaceAndreea(x, y){
     // body
     fill("white");
