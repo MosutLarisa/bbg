@@ -7,7 +7,7 @@ function setup() {
 function draw() {
     background("gray");
     smileyfaceAndreea();
-    smilyFaceAmaris()
+    smilyFaceAmaris(300, 300)
     smilyFaceLari();
 }
 
@@ -45,27 +45,27 @@ function draw() {
 
 
 
-function smilyFaceAmaris(){
+function smilyFaceAmaris(x,y){
   //body
   fill("white");
   stroke("black");
-  circle(300, 300, 50);
+  circle(x, y, 50);
 
   //eyes
  // circle( 390, 295, 5);
   //circle( 410, 295, 5);
     stroke("green");
-    ellipse(290, 295, 10, 5);
-    ellipse(310, 295, 10, 5);
+    ellipse(x-10, y-5, 10, 5);
+    ellipse(x+10, y-5, 10, 5);
 //eye pupils
     stroke("black");
     fill("black");
-    circle( 310, 295, 3);
-    circle( 290, 295, 3);
+    circle( x+10, y-5, 3);
+    circle( x-10, y-5, 3);
 //mounth
     stroke("red");
     fill("black");
-    arc(300, 310, 20, 5, 0, Math.PI);
+    arc(300, y+10, 20, 5, 0, Math.PI);
 }
    
 function smilyFaceLari(){
