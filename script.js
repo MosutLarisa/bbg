@@ -12,34 +12,34 @@ function draw() {
 }
 
 
-    function smileyfaceAndreea(){
-    //body
-    fill("black");
+   function smileyfaceAndreea(){
+    // body
+    fill("white");
     stroke("blue");
-    circle(400, 400, 50);
+    circle(600, 300, 50); // Adjusted x-coordinate to 600
     
-    //eyes
-    
+    // eyes
     stroke("purple");
-    ellipse(390, 295, 10, 5);
-    ellipse(410, 295, 10, 5);
-    //eye pupils
+    ellipse(590, 295, 10, 5); // Adjusted x-coordinate to 590
+    ellipse(610, 295, 10, 5); // Adjusted x-coordinate to 610
+    
+    // eye pupils
     stroke("black");
     fill("black")
-    circle(390, 295, 3);
-    circle(410, 295, 3);
-
-    //mouth
+    circle(590, 295, 3); // Adjusted x-coordinate to 590
+    circle(610, 295, 3); // Adjusted x-coordinate to 610
+    
+    // mouth
     stroke("pink");
     fill("black");
-    arc(400, 310, 20, 7, 0, Math.PI);
-
-    //cheeks
+    arc(600, 310, 20, 7, 0, Math.PI); // Adjusted x-coordinate to 600
+    
+    // cheeks
     stroke("red")
     fill("pink");
-    circle(420, 305, 7);
-    circle(380, 305, 7);
-    }
+    circle(620, 305, 7); // Adjusted x-coordinate to 620
+    circle(580, 305, 7); // Adjusted x-coordinate to 580
+}
 
 
 
