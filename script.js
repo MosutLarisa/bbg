@@ -6,39 +6,39 @@ function setup() {
 
 function draw() {
     background("gray");
-    smileyfaceAndreea();
+    smileyfaceAndreea(500, 300);
     smilyFaceAmaris()
     smilyFaceLari();
 }
 
 
-   function smileyfaceAndreea(){
+   function smileyfaceAndreea(x, y){
     // body
     fill("white");
     stroke("blue");
-    circle(600, 300, 50); // Adjusted x-coordinate to 600
+    circle(x, y, 50); 
     
     // eyes
     stroke("purple");
-    ellipse(590, 295, 10, 5); // Adjusted x-coordinate to 590
-    ellipse(610, 295, 10, 5); // Adjusted x-coordinate to 610
+    ellipse(x-10, y-5, 10, 5); 
+    ellipse(x+10, y-5, 10, 5); 
     
     // eye pupils
     stroke("black");
     fill("black")
-    circle(590, 295, 3); // Adjusted x-coordinate to 590
-    circle(610, 295, 3); // Adjusted x-coordinate to 610
+    circle(x-10, y-5, 3); 
+    circle(x+10, y-5, 3);
     
     // mouth
     stroke("pink");
     fill("black");
-    arc(600, 310, 20, 7, 0, Math.PI); // Adjusted x-coordinate to 600
+    arc(x, y+10, 20, 7, 0, Math.PI); 
     
     // cheeks
     stroke("red")
     fill("pink");
-    circle(620, 305, 7); // Adjusted x-coordinate to 620
-    circle(580, 305, 7); // Adjusted x-coordinate to 580
+    circle(x+20, y+5, 7); 
+    circle(x-20, y+5, 7);
 }
 
 
