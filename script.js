@@ -6,7 +6,7 @@ function setup() {
 }
 
 function draw() {
-    background("gray");
+    background("#009688");
 
     checkLimtisSMAndreea();
     checkLimitsSMAmaris();
