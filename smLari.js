@@ -9,45 +9,47 @@ let smLari = {
 };
 
 function checkLimitsSMLari() {
-    if(smLari.x >= tableWidth - smLari.ray || smLari.x <=0 + smLari.ray) {
-        smLari.directionX *= -1;}
+    if (smLari.x >= tableWidth - smLari.ray || smLari.x <= 0 + smLari.ray) {
+        smLari.directionX *= -1;
+    }
 
-    smLari.x += smLari.directionX * smLari.speedX;    
-    
-    if(smLari.y >= tableHight - smLari.ray || smLari.y <=0 + smLari.ray) {
-        smLari.directionY *= -1;}
+    smLari.x += smLari.directionX * smLari.speedX;
 
-    smLari.y += smLari.directionY * smLari.speedY;    
-    
+    if (smLari.y >= tableHight - smLari.ray || smLari.y <= 0 + smLari.ray) {
+        smLari.directionY *= -1;
+    }
+
+    smLari.y += smLari.directionY * smLari.speedY;
+
 }
-   
-function smilyFaceLari(x,y){
-        //body
-        fill("white");
-        stroke("black");
-        circle(x, y, smLari.ray * 2);
-        
-        //eyes
-        //circle(410, 295, 5);
-        stroke("blue");
-        ellipse(x-10, y-5, 10, 5);
-        ellipse(x+10, y-5, 10, 5);
-        //eye pupils
-        stroke("black");
-        fill("black")
-        circle(x-10, y-5, 3);
-        circle(x+10, y-5, 3);
-    
-        //mouth
-        stroke("red");
-        fill("black");
-        arc(x, y+10 , 20, 7, 0, Math.PI);
-    
-        //cheeks
-        stroke("pink")
-        fill("pink");
-        circle(x+20, y+5, 7);
-        circle(x-20,y+5, 7);
-    
-    
+
+function smilyFaceLari(x, y) {
+    //body
+    fill("white");
+    stroke("black");
+    circle(x, y, smLari.ray * 2);
+
+    //eyes
+    //circle(410, 295, 5);
+    stroke("blue");
+    ellipse(x - (smLari.ray * 2) / 5, y - (smLari.ray * 2) / 10, (smLari.ray * 2) / 5, (smLari.ray * 2) / 10);
+    ellipse(x + (smLari.ray * 2) / 5, y - (smLari.ray * 2) / 10, (smLari.ray * 2) / 5, (smLari.ray * 2) / 10);
+    //eye pupils
+    stroke("black");
+    fill("black")
+    circle(x - (smLari.ray * 2) / 5, y - (smLari.ray * 2) / 10, (smLari.ray * 2) / 16);
+    circle(x + (smLari.ray * 2) / 5, y - (smLari.ray * 2) / 10, (smLari.ray * 2) / 16);
+
+    //mouth
+    stroke("red");
+    fill("black");
+    arc(x, y + (smLari.ray * 2) / 5, (smLari.ray * 2) / 2.5, (smLari.ray * 2) / 7, (smLari.ray * 2) * 0, Math.PI);
+
+    //cheeks
+    stroke("pink")
+    fill("pink");
+    circle(x + (smLari.ray * 2) / 2.5, y + (smLari.ray * 2) / 10, (smLari.ray * 2) / 7);
+    circle(x - (smLari.ray * 2) / 2.5, y + (smLari.ray * 2) / 10, (smLari.ray * 2) / 7);
+
+
 }
