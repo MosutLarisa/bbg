@@ -1,13 +1,16 @@
 let smAmaris = {
     x: 300,
     y: 300,
-    directionX : 1
+    directionX : 1,
+    directionY : 1,
+    speed: 3
 };
 
 function checkLimitsSMAmaris(){
-    if (smAmaris.x >= tableWidth)
-        smAmarisdirectionX *= -1;
-    smAmaris.x += smAmaris.directionX;     
+    if (smAmaris.x >= tableWidth || smAmaris.x <=0)
+        smAmaris.directionX *= -1;
+
+        smAmaris.x += smAmaris.directionX * smAmaris.speed;
 }
 
 function smilyFaceAmaris(x,y){
