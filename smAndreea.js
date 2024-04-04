@@ -11,9 +11,13 @@ function checkLimtisSMAndreea() {
     if(smAndreea.x >= tableWidth ||  smAndreea.x <=0)
      smAndreea.directionX *= -1;
 
-     smAndreea.x += smAndreea.directionX * smAndreea.speed;
-
+     smAndreea.x += smAndreea.directionX * smAndreea.speed;   
      
+    if(smAndreea.y >= tableHight ||  smAndreea.y <=0)
+     smAndreea.directionY *= -1;
+
+     smAndreea.y += smAndreea.directionY * smAndreea.speed;
+
 }
    function smileyfaceAndreea(x, y){
     // body
