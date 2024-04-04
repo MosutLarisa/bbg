@@ -4,10 +4,6 @@ let smAndreeaY = 300;
 
 let directionXAndreea = 1;
 
-checkLimtisSMAndreea();
-
-
-
 function checkLimtisSMAndreea() {
     if(smAndreeaX >= 700)
      directionXAndreea *= -1;
