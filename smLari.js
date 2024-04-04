@@ -1,13 +1,14 @@
-let smLariX = 400;
-let smLariY = 300;
-
-let directionLariX= 1;
+let smLari = {
+    x: 400,
+    y: 300,
+    directionX: 1
+};
 
 function checkLimitsSMLari() {
-    if(smLariX >= tableWidth) 
-        directionLariX *= -1;
+    if(smLari.x >= tableWidth) 
+        smLaridirectionX *= -1;
 
-    smLariX += directionLariX;
+    smLari.x += smLari.directionX;
 }
    
 function smilyFaceLari(x,y){

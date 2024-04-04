@@ -14,6 +14,6 @@ function draw() {
 
     smileyfaceAndreea(smAndreeaX, smAndreeaY);
     smilyFaceAmaris(smAmaris.x , smAmaris.y);
-    smilyFaceLari(smLariX , smLariY);
+    smilyFaceLari(smLari.x , smLari.y);
 
 }
