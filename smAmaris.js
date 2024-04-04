@@ -1,28 +1,29 @@
 let smAmaris = {
     x: 300,
     y: 300,
+    ray: 25,
     directionX : 1,
     directionY : 1,
-    speed: 3
+    speedX: 6,
+    speedY: 6
 };
 
 function checkLimitsSMAmaris(){
-    if (smAmaris.x >= tableWidth || smAmaris.x <=0)
+    if (smAmaris.x >= tableWidth- smAmaris.ray || smAmaris.x <=0 + smAmaris.ray)
         smAmaris.directionX *= -1;
+        smAmaris.x += smAmaris.directionX * smAmaris.speedX;
 
-        smAmaris.x += smAmaris.directionX * smAmaris.speed;
 
-     if (smAmaris.y >= tableHight || smAmaris.y <=0)
+     if (smAmaris.y >= tableHight- smAmaris.ray || smAmaris.y <=0 + smAmaris.ray)
         smAmaris.directionY *= -1;
-
-        smAmaris.y += smAmaris.directionY * smAmaris.speed;
+        smAmaris.y += smAmaris.directionY * smAmaris.speedY;
 }
 
 function smilyFaceAmaris(x,y){
   //body
   fill("white");
   stroke("black");
-  circle(x, y, 50);
+  circle(x, y, smAmaris.ray*2);
 
   //eyes
  // circle( 390, 295, 5);
