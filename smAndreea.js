@@ -1,29 +1,32 @@
 let smAndreea = {
     x: 500,
     y: 300,
+    ray: 25,
     directionX: 1,
     directionY: 1,
-    speed: 3
+    
+    speedX: 7,
+    speedY: 7
 };
 
 
 function checkLimtisSMAndreea() {
-    if(smAndreea.x >= tableWidth ||  smAndreea.x <=0)
+    if(smAndreea.x >= tableWidth - smAndreea.ray ||  smAndreea.x <=0 + smAndreea.ray)
      smAndreea.directionX *= -1;
 
-     smAndreea.x += smAndreea.directionX * smAndreea.speed;   
+     smAndreea.x += smAndreea.directionX * smAndreea.speedX;   
      
-    if(smAndreea.y >= tableHight ||  smAndreea.y <=0)
+    if(smAndreea.y >= tableHight - smAndreea.ray||  smAndreea.y <=0 + smAndreea.ray)
      smAndreea.directionY *= -1;
 
-     smAndreea.y += smAndreea.directionY * smAndreea.speed;
+     smAndreea.y += smAndreea.directionY * smAndreea.speedY;
 
 }
    function smileyfaceAndreea(x, y){
     // body
     fill("white");
     stroke("blue");
-    circle(x, y, 50); 
+    circle(x, y, smAndreea.ray * 2); 
     
     // eyes
     stroke("purple");
