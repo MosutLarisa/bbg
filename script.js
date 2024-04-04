@@ -12,8 +12,8 @@ function draw() {
     checkLimitsSMAmaris();
     checkLimitsSMLari();
 
-    smileyfaceAndreea(smAndreeaX, smAndreeaY);
     smilyFaceAmaris(smAmaris.x , smAmaris.y);
+    smileyfaceAndreea(smAndreea.x, smAndreea.y);
     smilyFaceLari(smLari.x , smLari.y);
 
 }

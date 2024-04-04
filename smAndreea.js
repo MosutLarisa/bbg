@@ -1,14 +1,15 @@
-let smAndreeaX = 500;
-let smAndreeaY = 300;
+let smAndreea = {
+    x: 500,
+    y: 300,
+    direction: 1
+};
 
-
-let directionXAndreea = 1;
 
 function checkLimtisSMAndreea() {
-    if(smAndreeaX >= 700)
-     directionXAndreea *= -1;
+    if(smAndreea.x >= tableWidth)
+     smAndreea.direction *= -1;
 
-     smAndreeaX += directionXAndreea;
+     smAndreea.x += smAndreea.directionX;
 }
    function smileyfaceAndreea(x, y){
     // body
