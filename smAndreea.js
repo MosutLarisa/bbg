@@ -4,11 +4,6 @@ let smAndreea = {
     direction: 1
 };
 
-let smAndreeaX = 500;
-let smAndreeaY = 300;
-
-
-let directionXAndreea = 1;
 
 function checkLimtisSMAndreea() {
     if(smAndreea.x >= tableWidth)
