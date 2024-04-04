@@ -1,5 +1,5 @@
 let pdAndreea = {
-    y:200,
+    y:100,
     color:"#E91E63",
     width:70,
     heigth:10

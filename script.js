@@ -17,5 +17,7 @@ function draw() {
     smilyFaceLari(smLari.x , smLari.y);
     createPaddleAndreea();
 
+    createPaddleLari();
+
 }
   
