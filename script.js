@@ -1,20 +1,13 @@
-
-
+let tableWidth = 700;
+let tableHight = 500;
 
 let smAndreeaX = 500;
 let smAndreeaY = 300;
 
-
-
-
-
-let tableWidth = 700;
-let tableHight = 500;
-
 let smAmarisX =300;
 let smAmarisY =300;
 
-let directionX= 1;
+let directionLariX= 1;
 let directionXAmaris=1;
 let directionXAndreea = 1;
 
@@ -108,9 +101,9 @@ function smilyFaceAmaris(x,y){
 
 function checkLimitsSMLari() {
     if(smLariX >= tableWidth) 
-        directionX *= -1;
+        directionLariX *= -1;
 
-    smLariX += directionX;
+    smLariX += directionLariX;
 }
    
 function smilyFaceLari(x,y){
