@@ -12,6 +12,8 @@ function checkLimtisSMAndreea() {
      smAndreea.directionX *= -1;
 
      smAndreea.x += smAndreea.directionX * smAndreea.speed;
+
+     
 }
    function smileyfaceAndreea(x, y){
     // body
