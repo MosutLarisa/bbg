@@ -12,6 +12,11 @@ function checkLimitsSMLari() {
 
     smLari.x += smLari.directionX * smLari.speed;    
     
+    if(smLari.y >= tableHight || smLari.y <=0) 
+        smLari.directionY *= -1;
+
+    smLari.y += smLari.directionY * smLari.speed;    
+    
 }
    
 function smilyFaceLari(x,y){
