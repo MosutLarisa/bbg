@@ -1,14 +1,17 @@
 let smLari = {
     x: 400,
     y: 300,
-    directionX: 1
+    directionX: 1,
+    directionY: 1,
+    speed: 3
 };
 
 function checkLimitsSMLari() {
-    if(smLari.x >= tableWidth) 
-        smLaridirectionX *= -1;
+    if(smLari.x >= tableWidth || smLari.x <=0) 
+        smLari.directionX *= -1;
 
-    smLari.x += smLari.directionX;
+    smLari.x += smLari.directionX * smLari.speed;    
+    
 }
    
 function smilyFaceLari(x,y){
