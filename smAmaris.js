@@ -26,18 +26,16 @@ function smilyFaceAmaris(x,y){
   circle(x, y, smAmaris.ray*2);
 
   //eyes
- // circle( 390, 295, 5);
-  //circle( 410, 295, 5);
     stroke("green");
-    ellipse(x-10, y-5, 10, 5);
-    ellipse(x+10, y-5, 10, 5);
+    ellipse(x-(smAmaris.ray * 2) / 5, y-(smAmaris.ray * 2) / 10, (smAmaris.ray * 2) / 5, (smAmaris.ray * 2) / 10); 
+    ellipse(x+(smAmaris.ray * 2) / 5, y-(smAmaris.ray * 2) / 10, (smAmaris.ray * 2) / 5, (smAmaris.ray * 2) / 10);
 //eye pupils
     stroke("black");
     fill("black");
-    circle( x+10, y-5, 3);
-    circle( x-10, y-5, 3);
+    circle( x+(smAmaris.ray * 2) / 5, y-(smAmaris.ray * 2) / 10, (smAmaris.ray * 2) / 16);
+    circle( x-(smAmaris.ray * 2) / 5, y-(smAmaris.ray * 2) / 10, (smAmaris.ray * 2) / 16);
 //mounth
     stroke("red");
     fill("black");
-    arc(x, y+10, 20, 5, 0, Math.PI);
+    arc(x, y+(smAmaris.ray * 2) / 5, (smAmaris.ray * 2) / 2.5 , (smAmaris.ray * 2) / 10, (smAmaris.ray * 2) *0 , Math.PI);
 }
