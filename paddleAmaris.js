@@ -1,5 +1,5 @@
 let pdAmaris = {
-    y: 200,
+    y: 300,
     color: "#E91E63" , 
     width: 70 ,
     hight: 10
