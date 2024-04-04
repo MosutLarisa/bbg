@@ -30,19 +30,19 @@ function checkLimtisSMAndreea() {
     
     // eyes
     stroke("purple");
-    ellipse(x-10, y-5, 10, 5); 
-    ellipse(x+10, y-5, 10, 5); 
+    ellipse(x-(smAndreea.ray*2)/5, y-(smAndreea.ray*2)/10, (smAndreea.ray*2)/5, (smAndreea.ray*2)/10); 
+    ellipse(x+(smAndreea.ray*2)/5, y-(smAndreea.ray*2)/10, (smAndreea.ray*2)/5, (smAndreea.ray*2)/10); 
     
     // eye pupils
     stroke("black");
     fill("black")
-    circle(x-10, y-5, 3); 
-    circle(x+10, y-5, 3);
+    circle(x-(smAndreea.ray*2)/5, y-(smAndreea.ray*2)/10, (smAndreea.ray*2)/16); 
+    circle(x+(smAndreea.ray*2)/5, y-(smAndreea.ray*2)/10, (smAndreea.ray*2)/16);
     
     // mouth
     stroke("pink");
     fill("black");
-    arc(x, y+10, 20, 7, 0, Math.PI); 
+    arc(x, y+(smAndreea.ray*2)/5, (smAndreea.ray*2)/2.5, 7, 0, Math.PI); 
     
     // cheeks
     stroke("red")
