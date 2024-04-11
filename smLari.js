@@ -4,8 +4,8 @@ let smLari = {
     ray: 25,
     directionX: 1,
     directionY: 1,
-    speedX: 5,
-    speedY: 5
+    speedX: 3,
+    speedY: 3
 };
 
 function checkLimitsSMLari() {
@@ -15,17 +15,22 @@ function checkLimitsSMLari() {
 
     smLari.x += smLari.directionX * smLari.speedX;
 
-    if (smLari.y >= tableHight - smLari.ray || smLari.y <= 0 + smLari.ray) {
+    if (smLari.y <= 0 + smLari.ray) {
         smLari.directionY *= -1;
     }
 
+    if (smLari.y >= pdLari.y - smLari.ray &&
+        smLari.y <= pdLari.y + pdLari.heigth &&
+        smLari.x >= pdLari.x - smLari.ray &&
+        smLari.x <= pdLari.x + pdLari.width + smLari.ray) {
+        smLari.directionY *= -1;
+    }
     smLari.y += smLari.directionY * smLari.speedY;
-
 }
 
 function smilyFaceLari(x, y) {
     //body
-    fill("white");
+    fill("lightblue");
     stroke("black");
     circle(x, y, smLari.ray * 2);
 
