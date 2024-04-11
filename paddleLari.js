@@ -1,5 +1,5 @@
 let pdLari = {
-    y: 200,
+    y: 480,
     color: 'blue',
     width: 70,
     heigth: 10
@@ -7,5 +7,5 @@ let pdLari = {
 
 function createPaddleLari() {
     fill(pdLari.color)
-    rect(mouseX, pdLari.y, pdLari.width, pdLari.heigth)
+    rect(mouseX-pdLari.width/2, pdLari.y, pdLari.width, pdLari.heigth)
 }
