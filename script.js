@@ -4,6 +4,7 @@ let tableHight = 500;
 function setup() {
     createCanvas(tableWidth, tableHight);
     initBricksAmaris();
+    initBriksLari();
 }
 
 function draw() {
@@ -22,6 +23,6 @@ function draw() {
     createPaddleLari();
 
     createBricksAmaris();
-
+    createBricksLari();
 }
   
