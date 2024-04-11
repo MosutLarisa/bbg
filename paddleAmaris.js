@@ -1,11 +1,11 @@
 let pdAmaris = {
-    y: 300,
-    color: "#E91E63" , 
+    y: 460,
+    color: "#DFB022" , 
     width: 70 ,
     hight: 10
 }
 
 function createPaddleAmaris(){
     fill(pdAmaris.color)
-    rect(mouseX, pdAmaris.y, pdAmaris.width, pdAmaris.hight)
+    rect(mouseX-pdAmaris.width/2, pdAmaris.y, pdAmaris.width, pdAmaris.hight)
 }
