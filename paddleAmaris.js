@@ -1,11 +1,13 @@
 let pdAmaris = {
+    x:tableWidth/2,
     y: 460,
     color: "#DFB022" , 
-    width: 70 ,
-    hight: 10
+    width: 100 ,
+    heigth: 20
 }
 
 function createPaddleAmaris(){
     fill(pdAmaris.color)
-    rect(mouseX-pdAmaris.width/2, pdAmaris.y, pdAmaris.width, pdAmaris.hight)
+    pdAmaris.x= mouseX - pdAmaris.width/2;
+    rect(pdAmaris.x, pdAmaris.y, pdAmaris.width, pdAmaris.heigth)
 }
