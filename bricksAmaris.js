@@ -1,9 +1,9 @@
 let bricksAmaris=[];
 
 const marginAmaris = 10;
-const distanceBetweenBricksAmaris=10 ;
+const distanceBetweenBricksAmaris= 10 ;
 
-const bricksRowsAmaris = 1;
+const bricksRowsAmaris = 3;
 const rowBricksNumberAmaris = 7;
 
 const bricksWidthAmaris =Math.floor(
@@ -25,9 +25,9 @@ function initBricksAmaris(){
             hit: false,
             x,
             y: row * 35,
-            color: "#D8155F", 
+            color: "#FDBF05", 
             width: bricksWidthAmaris,
-            height: 20,
+            height: 23,
             row
         })
     }
@@ -38,5 +38,6 @@ function createBricksAmaris(params){
     bricksAmaris.forEach(brick => {
         fill(brick.color)
         rect(brick.x, brick.y, brick.width, brick.height)
+       
     })
 }
