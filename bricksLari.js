@@ -1,19 +1,33 @@
-
 let bricksLari = []
 
-const bricksRowsLari = 1;
-const brickClosLari = 1;
-const rowBricksNumberLari = 4;
+const marginLari = 10
+const distanceBetweenBricksLari = 10;
+
+const bricksRowsLari = 3
+const rowBricksNumberLari = 7
+
+const brickWidthLari = Math.floor(
+    (tableWidth - 
+        marginLari * 2 - 
+        (rowBricksNumberLari - 1) * distanceBetweenBricksLari) / rowBricksNumberLari);
 
 function initBriksLari() {
-    for(let i = 0; i < bricksRowsLari * rowBricksNumberLari ; i++) {
+    let x = marginLari;
+    for (let i = 0; i < bricksRowsLari * rowBricksNumberLari; i++) {
+        const row = Math.floor(i / rowBricksNumberLari) + 1;
+
+        x = x + brickWidthLari + distanceBetweenBricksLari;
+        if (i % rowBricksNumberLari == 0) 
+            x=marginLari;
+
         bricksLari.push({
             hit: false,
-            x: i*70,
-            y:15,
+            x,
+            y: row * 35,
             color: "#0000ff",
-            width: 50,
-            height: 10,
+            width: brickWidthLari,
+            height: 20,
+            row
         })
     }
 }
