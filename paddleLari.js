@@ -3,7 +3,7 @@ let pdLari = {
     y: 430,
     color: 'blue',
     width: 70,
-    heigth: 10
+    heigth: 20
 }
 
 function createPaddleLari() {
